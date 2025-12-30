@@ -4,7 +4,7 @@ date: 2025-12-30 10:00:00
 tags:
   - Minecraft
   - 服务器
-categories:
+categories:\
   - 教程
 description: 一句话说明这篇文章解决什么问题（会显示在首页摘要）
 cover: ''
