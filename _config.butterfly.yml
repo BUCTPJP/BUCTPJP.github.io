@@ -64,9 +64,6 @@ avatar:
   img: /img/butterfly-icon.png
   effect: true
 
-social:
-  fab fa-github: https://github.com/BUCTPJP || Github
-  fas fa-envelope: mailto:pjp1095765918@gmail.com || Email
 
 # Disable all banner images
 disable_top_img: false
