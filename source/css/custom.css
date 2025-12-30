@@ -1,0 +1,17 @@
+/* 文章内容更窄，更像文档 */
+.post-content {
+    max-width: 860px;
+    margin: 0 auto;
+  }
+  
+  /* 标题更清晰 */
+  .post-content h1, .post-content h2, .post-content h3 {
+    letter-spacing: 0.2px;
+  }
+  
+  /* 段落更好读 */
+  .post-content p {
+    line-height: 1.85;
+    font-size: 16px;
+  }
+  
