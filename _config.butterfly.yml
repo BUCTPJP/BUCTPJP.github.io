@@ -172,7 +172,6 @@ subtitle:
   # If you close the typewriter effect, the subtitle will only show the first line of sub
   sub:
     - 记录 | 教程 | 笔记
-    - Hexo × Vercel × GitHub Pages
     - 分享我做过的东西与踩坑
 
 # Article layout on the homepage
