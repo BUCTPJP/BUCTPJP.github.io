@@ -13,10 +13,9 @@ cover: ''
 
 <!-- more -->
 
-# 总览
-整合包：**[RDI]随机空岛**   
+# 总览  
 服务端：**Forge**   
-联机方式：**樱花Frp**（免费）  
+联机方式：**樱花Frp** 
 
 # 1 环境准备  
 ## 1.1 硬件准备   
@@ -44,7 +43,7 @@ cover: ''
 | JDK 21.0.8 |    
 #### (2) JAVA下载   
 &emsp;&emsp;来到此网址：[Java 版本发布历史](https://www.java.com/releases/)，可以获取广泛发布的 Java SE 版本以及指向每个版本关键信息的链接，找到对应的版本进行下载安装即可。    
-![Java 版本发布历史](Mincraft制作Serve-package心得/Java%20版本发布历史.png "Java 版本发布历史")    
+![Java 版本发布历史](./Java%20版本发布历史.png "Java 版本发布历史")    
 
 ### 1.2.1 SakuraFrp   
 - &emsp;来到此网址：[SakuraFrp官网](https://www.natfrp.com/)，注册账号后，下载客户端并进行登录。    
@@ -55,7 +54,7 @@ cover: ''
 ## 1.3 Forge 服务端   
 ### 1.3.1 下载Forge 服务端   
 来到此网址：[Forge 服务端](https://files.minecraftforge.net/net/minecraftforge/forge/)下载对应 Minecraft 版本的安装包    
-![Forge 服务端历史版本](Mincraft制作Serve-package心得/Forge%20服务端历史版本.png "Forge 服务端历史版本")     
+![Forge 服务端历史版本](./Forge%20服务端历史版本.png "Forge 服务端历史版本")     
 若点击下载无响应，无法下载，在下载页面，右键 Installer 按钮，复制链接并粘贴网页栏里面，把 &url= 以及前面的所有字符都去掉，再回车访问页面即可开始下载      
 - 下载到形如 **forge-xxx-xxx-installer.jar** 的安装包后，在终端中使用以下代码打开安装：    
 ```javascript {.line-numbers}
