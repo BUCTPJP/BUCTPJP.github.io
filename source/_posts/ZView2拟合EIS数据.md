@@ -32,11 +32,11 @@ cover: ''
 
 打开 ZView2 后，点击工具栏中的数据文件按钮，进入 **Select Data Files** 窗口。
 
-![打开数据文件选择窗口](./ZView2拟合EIS数据/01-open-data-dialog.png)
+![打开数据文件选择窗口](./01-open-data-dialog.png)
 
 在左侧选择待分析的 TXT 文件，点击中间的右箭头，将文件加入右侧 **Files to Plot** 列表，然后点击 **OK**。
 
-![选择并导入 TXT 数据](./ZView2拟合EIS数据/02-select-data-file.png)
+![选择并导入 TXT 数据](./02-select-data-file.png)
 
 数据导入后，左侧显示 Nyquist 图，右侧显示 Bode 图。如果曲线连线杂乱、量级异常或频率方向不合理，优先检查：
 
@@ -46,17 +46,17 @@ cover: ''
 4. 软件是否需要对 `Z''` 取负号；
 5. 原始数据中是否存在明显异常点。
 
-![数据导入后的初始图形](./ZView2拟合EIS数据/03-imported-raw-data.png)
+![数据导入后的初始图形](./03-imported-raw-data.png)
 
 # 3 激活数据并处理异常点
 
 在工具栏的数据下拉框中选择刚导入的文件，使其成为当前活动数据。后续删除数据点、Instant Fit 和正式拟合都需要对活动数据进行操作。
 
-![选择当前活动数据](./ZView2拟合EIS数据/04-select-active-data.png)
+![选择当前活动数据](./04-select-active-data.png)
 
 本次数据中存在偏离主体趋势的点。可以先点击工具栏中的选点工具，在 Nyquist 图或 Bode 图中选中异常点。
 
-![在曲线上选择异常点](./ZView2拟合EIS数据/05-select-outliers.png)
+![在曲线上选择异常点](./05-select-outliers.png)
 
 然后依次点击：
 
@@ -66,7 +66,7 @@ Tools -> Delete Data Point
 
 如果连续一段数据都不可信，也可以使用 **Delete Data Range**。
 
-![删除异常数据点](./ZView2拟合EIS数据/06-delete-data-point.png)
+![删除异常数据点](./06-delete-data-point.png)
 
 删除时要谨慎。不能仅仅因为某个点“让曲线不好看”就删除，最好结合测试日志、重复实验以及仪器量程判断。高频端接触不良、导线寄生效应，或低频端体系未稳定，都可能造成异常，但这些现象也可能包含真实信息。
 
@@ -88,7 +88,7 @@ R0-(R1∥CPE1)
 - `CPE1-T`：CPE 的幅值参数；
 - `CPE1-P`：指数参数，通常记作 `n`，越接近 1 越接近理想电容。
 
-![打开等效电路窗口](./ZView2拟合EIS数据/07-open-equivalent-circuit.png)
+![打开等效电路窗口](./07-open-equivalent-circuit.png)
 
 需要修改电路时，可以在元件上点击右键，选择 **New**，再按实际连接关系添加：
 
@@ -97,7 +97,7 @@ R0-(R1∥CPE1)
 - **Series (before)**：在当前元件前串联；
 - **Parallel (before)**：在当前元件前并联。
 
-![添加串联或并联元件](./ZView2拟合EIS数据/08-edit-circuit.png)
+![添加串联或并联元件](./08-edit-circuit.png)
 
 等效电路不是越复杂越好。增加元件虽然可能降低残差，但也会提高参数相关性，甚至得到缺乏物理意义的结果。建议从能解释曲线主要特征的简单模型开始。
 
@@ -124,7 +124,7 @@ R0-(R1∥CPE1)
 | `CPE-T` | `CPE1-T` |
 | `CPE-P` | `CPE1-P` |
 
-![使用 Instant Fit 获取初始参数](./ZView2拟合EIS数据/09-instant-fit.png)
+![使用 Instant Fit 获取初始参数](./09-instant-fit.png)
 
 也可以根据 Nyquist 图手动给出大致初值：
 
@@ -329,11 +329,11 @@ R0-(R1∥CPE1)-(R2∥CPE2)
 
 确认频率范围覆盖需要参与拟合的数据后，点击 **OK**。
 
-![配置拟合参数和频率范围](./ZView2拟合EIS数据/10-fitting-setup.png)
+![配置拟合参数和频率范围](./10-fitting-setup.png)
 
 随后点击 **Run Fitting / Freq. Range** 开始拟合。拟合完成后，图中会出现 `FitResult` 曲线，等效电路窗口也会显示参数值、误差和卡方等指标。
 
-![运行拟合并查看结果](./ZView2拟合EIS数据/11-fit-result.png)
+![运行拟合并查看结果](./11-fit-result.png)
 
 # 7 判断拟合是否可信
 
@@ -380,7 +380,7 @@ ZView2 会给出参数的 `Error` 和 `Error%`。误差比例过大通常说明�
 
 复制后可以粘贴到 Excel、Origin 或其他软件中继续绘图和统计。
 
-![复制拟合结果数据](./ZView2拟合EIS数据/12-export-fit-data.png)
+![复制拟合结果数据](./12-export-fit-data.png)
 
 同时建议保存 ZView2 工程文件，保留原始数据、等效电路、初始值和最终拟合参数，方便之后复核。
 
